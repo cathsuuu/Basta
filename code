@@ -1,0 +1,20 @@
+def get_letter_grade(grade):
+    if grade >= 90:
+        return "A"
+    elif grade >= 80:
+        return "B"
+    elif grade >= 70:
+        return "C"
+    elif grade >= 60:
+        return "D"
+    else:
+        return "F"
+
+def main():
+    grade_input = int(input("Enter numeric grade: ")) 
+    letter = get_letter_grade(grade_input)
+    print(f"Numeric Grade: {grade_input}, Letter Grade: {letter}")
+
+if __name__ == "__main__":
+    
+    main()
